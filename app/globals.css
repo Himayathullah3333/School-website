@@ -23,6 +23,10 @@ code {
 .App-logo {
     height: 40vmin;
     pointer-events: none;
+    background-image: url('/public/images/schoollogobgr');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

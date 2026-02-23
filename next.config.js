@@ -34,6 +34,15 @@ const nextConfig = {
           { key: "Access-Control-Allow-Headers", value: "*" },
         ],
       },
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Link',
+            value: '<public/images/schoollogobgr>; rel="icon"',
+          },
+        ],
+      },
     ];
   },
 };

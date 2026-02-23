@@ -6,8 +6,13 @@ import Chatbot from '@/components/Chatbot';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: process.env.NEXT_PUBLIC_SCHOOL_NAME || 'Excellence Academy',
-  description: 'Building Tomorrow\'s Leaders Today - A premier educational institution',
+  title: process.env.NEXT_PUBLIC_SCHOOL_NAME || 'PSM KALAIMAGAL GROUPS',
+  description: "Building Tomorrow's Leaders Today - A premier educational institution",
+  icons: {
+    icon: '/images/schoollogobgr.png',
+    shortcut: '/images/schoollogobgr.png',
+    apple: '/images/schoollogobgr.png',
+  },
 };
 
 export default function RootLayout({ children }) {

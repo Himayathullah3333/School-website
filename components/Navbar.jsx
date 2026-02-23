@@ -17,7 +17,7 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const schoolName = process.env.NEXT_PUBLIC_SCHOOL_NAME || 'Excellence Academy';
+  const schoolName = process.env.NEXT_PUBLIC_SCHOOL_NAME || 'PSM KALAIMAGAL GROUPS';
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -25,9 +25,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-blue-600 p-2 rounded-full group-hover:bg-blue-700 transition-colors">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
+            <img src='/images/schoollogobgr.png' alt="School Logo" className="w-10 h-10" />
             <span className="text-xl font-bold text-blue-900 hidden md:block">{schoolName}</span>
           </Link>
 

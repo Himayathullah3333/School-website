@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="relative h-96 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1648256351840-3f33131c3766"
+            src='/images/about.jpeg'
             alt="School Building"
             fill
             className="object-cover opacity-30"
@@ -65,7 +65,7 @@ export default function AboutPage() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1"
+                src='/images/campus3.jpeg'
                 alt="Students celebrating"
                 fill
                 className="object-cover"
@@ -134,8 +134,8 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "2000+", label: "Students" },
-              { number: "150+", label: "Teachers" },
+              { number: "1000+", label: "Students" },
+              { number: "30+", label: "Teachers" },
               { number: "20+", label: "Years" },
               { number: "95%", label: "Success Rate" }
             ].map((stat, index) => (
