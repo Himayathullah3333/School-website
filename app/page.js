@@ -232,6 +232,108 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Thirukkural Section */}
+      <section className="py-20 bg-gradient-to-b from-blue-950 to-blue-900 relative overflow-hidden">
+        {/* Decorative background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 40px,
+                rgba(255,255,255,0.3) 40px,
+                rgba(255,255,255,0.3) 41px
+              ),
+              repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 40px,
+                rgba(255,255,255,0.3) 40px,
+                rgba(255,255,255,0.3) 41px
+              )`
+            }}
+          />
+        </div>
+
+        {/* Top decorative gold border */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto"
+          >
+            {/* Header label */}
+            <div className="flex items-center justify-center gap-4 mb-10">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-yellow-400" />
+              <span className="text-yellow-400 text-sm font-semibold tracking-[0.3em] uppercase">
+                Thirukkural
+              </span>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-yellow-400" />
+            </div>
+
+            {/* Card */}
+            <div
+              className="relative rounded-2xl p-1"
+              style={{
+                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 40%, #f59e0b 100%)',
+              }}
+            >
+              <div className="rounded-2xl bg-blue-950 px-8 py-10 md:px-14 md:py-12 text-center relative overflow-hidden">
+                {/* Inner glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 via-transparent to-blue-800/30 rounded-2xl pointer-events-none" />
+
+               
+
+                {/* Kural number badge */}
+                <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1 mb-6">
+                  <span className="text-yellow-400 text-xs font-bold tracking-widest uppercase">குறள்</span>
+                  <span className="text-yellow-300 font-bold text-sm">1</span>
+                </div>
+
+                {/* Kural text */}
+                <p className="text-2xl md:text-3xl leading-relaxed font-medium text-white mb-2 relative z-10"
+                  style={{ fontFamily: '"Noto Serif Tamil", "Latha", serif' }}>
+                  அகர முதல எழுத்தெல்லாம் ஆதி
+                </p>
+                <p className="text-2xl md:text-3xl leading-relaxed font-medium text-white mb-8 relative z-10"
+                  style={{ fontFamily: '"Noto Serif Tamil", "Latha", serif' }}>
+                  பகவன் முதற்றே உலகு
+                </p>
+
+                {/* Divider */}
+                <div className="flex items-center justify-center gap-3 mb-6">
+                  <div className="h-px w-12 bg-yellow-500/40" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                  <div className="h-px w-12 bg-yellow-500/40" />
+                </div>
+
+                {/* Translation */}
+                <p className="text-blue-200 text-base md:text-lg italic relative z-10">
+                  "As the letter 'A' is the first of all letters, so the eternal God is first in the world."
+                </p>
+
+                {/* Author credit */}
+                <p className="text-yellow-500/70 text-sm mt-4 tracking-wider relative z-10">
+                  — திருவள்ளுவர் · Thiruvalluvar
+                </p>
+              </div>
+            </div>
+
+            {/* Bottom label */}
+            <p className="text-center text-blue-400/60 text-xs mt-6 tracking-widest uppercase">
+              திருக்குறள் · The Sacred Couplets
+            </p>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }
