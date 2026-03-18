@@ -44,7 +44,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-blue-900 mb-6">Our Story</h2>
               <p className="text-gray-700 text-lg mb-4 leading-relaxed">
                 Founded with a vision to provide world-class education, {schoolName} has been at the forefront 
-                of educational excellence for over two decades. Our commitment to nurturing young minds and 
+                of educational excellence for over three decades. Our commitment to nurturing young minds and 
                 developing future leaders has made us one of the most respected institutions in the region.
               </p>
               <p className="text-gray-700 text-lg mb-4 leading-relaxed">
@@ -134,7 +134,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "3500+", label: "Students" },
+              { number: "5000+", label: "Students" },
               { number: "50+", label: "Teachers" },
               { number: "30+", label: "Years" },
               { number: "95%", label: "Success Rate" }
